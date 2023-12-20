@@ -1,3 +1,17 @@
+CREATE TABLE Shop(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    street VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    country VARCHAR(255) NOT NULL
+);
+insert into Shop values (1,'Bookworms Emporia','123 Main Street','New York','USA');
+insert into Shop values (2, 'Literary Haven', '456 Oak Avenue', 'London', 'UK');
+insert into Shop values (3, 'PageTurner Books', '789 Maple Drive', 'Paris', 'France');
+insert into Shop values (4, 'Booktopia', '111 Baker Street', 'Sydney', 'Australia');
+insert into Shop values (5, 'Book Haven', '789 Piazza Navona', 'Rome', 'Italy');
+insert into Shop values (6, 'Readers Corner', '23 Alexanderplatz', 'Berlin', 'Germany');
+
 insert into BOOK (TITLE) values ('Oryx and Crake'); /*1*/
 insert into BOOK (TITLE) values ('The year of the flood');/*2*/
 insert into BOOK (TITLE) values ('MaddAddam');/*3*/
