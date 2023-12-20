@@ -45,4 +45,10 @@ public class ShopService {
 
         return shopDetailedDTOConverter.convertToDto(shop.get());
     }
+
+    public Iterable<ShopDTO> search(String name) {
+        return shopRepository.findByNameContainingIgnoreCase(name).stream()
+                .map(s -> shopDTOConverter.convertToDto(s))
+                .collect(Collectors.toList());
+    }
 }
