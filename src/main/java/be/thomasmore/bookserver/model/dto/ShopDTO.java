@@ -11,4 +11,6 @@ public class ShopDTO {
 
     private int id;
     private String name;
+
+    
 }

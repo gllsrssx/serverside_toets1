@@ -10,10 +10,11 @@ import jakarta.persistence.*;
 @Data
 public class Shop {
    
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String name;
+
+    
 
 }

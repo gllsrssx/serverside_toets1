@@ -28,7 +28,7 @@ public class ShopController {
         return shopService.findAll(null);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/filter/{name}")
     public Iterable<ShopDTO> search(@RequestParam String name) {
         log.info(String.format("##### search shops %s", name));
         return shopService.search(name);
