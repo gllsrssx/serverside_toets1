@@ -29,14 +29,14 @@ public class ShopController {
     }
 
     @GetMapping("/filter/{name}")
-    public Iterable<ShopDTO> search(@RequestParam String name) {
-        log.info(String.format("##### search shops %s", name));
-        return shopService.search(name);
+    public Iterable<ShopDTO> findAll(@PathVariable String name) {
+        log.info(String.format("##### findAll shops with name %s", name));
+        return shopService.findAll(name);
     }
 
-    @GetMapping("{id}")
-    public ShopDetailedDTO findOne(@PathVariable int id) {
-        log.info(String.format("##### findOne shop %d", id));
-        return shopService.findOne(id);
-    }
+    // @GetMapping("{id}")
+    // public ShopDetailedDTO findOne(@PathVariable int id) {
+    // log.info(String.format("##### findOne shop %d", id));
+    // return shopService.findOne(id);
+    // }
 }

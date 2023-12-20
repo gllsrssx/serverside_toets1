@@ -1,9 +1,10 @@
 package be.thomasmore.bookserver.repositories;
 
 import org.springframework.data.repository.CrudRepository;
-import java.util.List;
 
-import be.thomasmore.bookserver.model.dto.Shop;
+import be.thomasmore.bookserver.model.Shop;
+
+import java.util.List;
 
 public interface ShopRepository extends CrudRepository<Shop, Integer>{
 

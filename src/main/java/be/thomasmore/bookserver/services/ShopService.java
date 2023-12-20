@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import be.thomasmore.bookserver.model.Shop;
 import be.thomasmore.bookserver.model.converters.ShopDTOConverter;
 import be.thomasmore.bookserver.model.converters.ShopDetailedDTOConverter;
-import be.thomasmore.bookserver.model.dto.Shop;
 import be.thomasmore.bookserver.model.dto.ShopDTO;
 import be.thomasmore.bookserver.model.dto.ShopDetailedDTO;
 import be.thomasmore.bookserver.repositories.ShopRepository;

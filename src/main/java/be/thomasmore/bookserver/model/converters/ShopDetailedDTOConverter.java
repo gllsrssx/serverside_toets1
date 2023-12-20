@@ -4,7 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import be.thomasmore.bookserver.model.dto.Shop;
+import be.thomasmore.bookserver.model.Shop;
 import be.thomasmore.bookserver.model.dto.ShopDetailedDTO;
 
 @Component
