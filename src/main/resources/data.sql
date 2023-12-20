@@ -1,10 +1,13 @@
-CREATE TABLE Shop(
+DROP TABLE IF EXISTS Shop;
+
+CREATE TABLE IF NOT EXISTS Shop(
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     street VARCHAR(255) NOT NULL,
     city VARCHAR(255) NOT NULL,
     country VARCHAR(255) NOT NULL
 );
+
 insert into Shop values (1,'Bookworms Emporia','123 Main Street','New York','USA');
 insert into Shop values (2, 'Literary Haven', '456 Oak Avenue', 'London', 'UK');
 insert into Shop values (3, 'PageTurner Books', '789 Maple Drive', 'Paris', 'France');
